@@ -1,0 +1,11 @@
+res://theme/tool_theme.tres
+res://scenes/player.tscn
+res://scenes/main.tscn
+res://scenes/map.tscn
+res://scenes/ladang.tscn
+res://scenes/toolFarm.tscn
+res://scripts/global/gameEeventInput.gd
+res://scripts/state_machine/node_state.gd
+res://scripts/state_machine/node_state_machine.gd
+res://scripts/player/idle_state.gd
+res://scripts/global/game_input_events.gd

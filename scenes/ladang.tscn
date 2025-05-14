@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://ooe6p4dhnl75"]
+
+[ext_resource type="Texture2D" uid="uid://5ln7jt4egdrl" path="res://assets/maps/Tilled_Dirt.png" id="1_cnglk"]
+[ext_resource type="Script" uid="uid://bnwjy7m100ct5" path="res://scripts/ladang.gd" id="2_m6dik"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_delnt"]
+
+[node name="ladang" type="Sprite2D"]
+position = Vector2(0, 1)
+texture = ExtResource("1_cnglk")
+region_enabled = true
+region_rect = Rect2(9.20804, 8.90127, 29.6868, 29.6868)
+script = ExtResource("2_m6dik")
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(-21, 3)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource("RectangleShape2D_delnt")
+
+[connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_2_body_entered"]

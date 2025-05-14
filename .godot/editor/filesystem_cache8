@@ -1,0 +1,44 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1746876822
+icon.svg::CompressedTexture2D::2504830009158057345::1746874055::1746874060::1::::<><>::
+player.gd::GDScript::-1::1746876187::0::1::::<>CharacterBody2D<>::
+::res://assets/::1746874528
+::res://assets/characters/::1746875544
+Basic Charakter Actions.png::CompressedTexture2D::2481241167126305023::1746875452::1746875544::1::::<><>::
+Basic Charakter Spritesheet.png::CompressedTexture2D::9178128731009570683::1746875452::1746875544::1::::<><>::
+Egg_And_Nest.png::CompressedTexture2D::8065317842624810671::1746875452::1746875544::1::::<><>::
+Free Chicken Sprites.png::CompressedTexture2D::8610188229616903393::1746875452::1746875544::1::::<><>::
+Free Cow Sprites.png::CompressedTexture2D::4239618847106720454::1746875452::1746875544::1::::<><>::
+Tools.png::CompressedTexture2D::4842781589615389636::1746875452::1746875544::1::::<><>::
+::res://assets/maps/::1746876458
+Bitmask references 1.png::CompressedTexture2D::373657436734578367::1746876458::1746876458::1::::<><>::
+Bitmask references 2.png::CompressedTexture2D::4713180484113010524::1746876458::1746876458::1::::<><>::
+Doors.png::CompressedTexture2D::8858784743293275304::1746876458::1746876458::1::::<><>::
+Fences.png::CompressedTexture2D::2596573312201703780::1746876458::1746876458::1::::<><>::
+Grass.png::CompressedTexture2D::9011365107643692753::1746876458::1746876458::1::::<><>::
+Hills.png::CompressedTexture2D::2634287776846782765::1746876458::1746876458::1::::<><>::
+Tilled_Dirt.png::CompressedTexture2D::2129220434131197481::1746876458::1746876458::1::::<><>::
+Tilled_Dirt_v2.png::CompressedTexture2D::4952209185370763160::1746876458::1746876458::1::::<><>::
+Tilled_Dirt_Wide.png::CompressedTexture2D::1826492857917252672::1746876458::1746876458::1::::<><>::
+Tilled_Dirt_Wide_v2.png::CompressedTexture2D::4927091086407251599::1746876458::1746876458::1::::<><>::
+Water.png::CompressedTexture2D::5949262895378151514::1746876458::1746876458::1::::<><>::
+Wooden_House_Roof_Tilset.png::CompressedTexture2D::2360975045747753633::1746876458::1746876458::1::::<><>::
+Wooden_House_Walls_Tilset.png::CompressedTexture2D::1430412560330308844::1746876458::1746876458::1::::<><>::
+::res://assets/objects/::1746876822
+Basic_Furniture.png::CompressedTexture2D::2225849384049950900::1746876810::1746876822::1::::<><>::
+Basic_Grass_Biom_things.png::CompressedTexture2D::8732480067088000968::1746876810::1746876822::1::::<><>::
+Basic_Plants.png::CompressedTexture2D::5668133859377385193::1746876810::1746876822::1::::<><>::
+Basic_tools_and_meterials.png::CompressedTexture2D::5132208792015623873::1746876810::1746876822::1::::<><>::
+Chest.png::CompressedTexture2D::3943034792240644613::1746876810::1746876822::1::::<><>::
+Egg_item.png::CompressedTexture2D::7686972727587190231::1746876810::1746876822::1::::<><>::
+Free_Chicken_House.png::CompressedTexture2D::9035204206623072942::1746876810::1746876822::1::::<><>::
+Paths.png::CompressedTexture2D::2988533954458652347::1746876810::1746876822::1::::<><>::
+Simple_Milk_and_grass_item.png::CompressedTexture2D::4829732577599774704::1746876810::1746876822::1::::<><>::
+Wood_Bridge.png::CompressedTexture2D::359456673213967166::1746876810::1746876822::1::::<><>::
+::res://scenes/::1746877045
+main.tscn::PackedScene::2479999338817305671::1746877752::0::1::::<><>::uid://dctc0wqdcgww2::::res://scenes/player.tscn<>uid://d4mbogub74e1r::::res://scenes/map.tscn<>uid://d1yyq1fv7o68a::::res://assets/objects/Free_Chicken_House.png<>uid://5ln7jt4egdrl::::res://assets/maps/Tilled_Dirt.png
+map.tscn::PackedScene::9219597113863927325::1746877045::0::1::::<><>::uid://bc82ghwc5iprg::::res://assets/maps/Fences.png<>uid://d1nf4p7t300w0::::res://assets/maps/Grass.png<>uid://bdsclnbng0d2d::::res://assets/maps/Hills.png
+player.tscn::PackedScene::7339030174885473807::1746877841::0::1::::<><>::res://player.gd<>uid://d307o61uy3r36::::res://assets/characters/Basic Charakter Spritesheet.png
+ladang.tscn::PackedScene::1011844159867173506::1746877813::0::1::::<><>::uid://5ln7jt4egdrl::::res://assets/maps/Tilled_Dirt.png
+::res://scripts/::1746874240
+ladang.gd::GDScript::-1::1746877834::0::1::::<>Sprite2D<>::

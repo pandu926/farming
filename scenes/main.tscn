@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://bbllhyfjpjfmd"]
+
+[ext_resource type="PackedScene" uid="uid://dctc0wqdcgww2" path="res://scenes/player.tscn" id="1_ch7n4"]
+[ext_resource type="PackedScene" uid="uid://d4mbogub74e1r" path="res://scenes/map.tscn" id="2_66aix"]
+[ext_resource type="Texture2D" uid="uid://d1yyq1fv7o68a" path="res://assets/objects/Free_Chicken_House.png" id="2_lckvv"]
+[ext_resource type="Texture2D" uid="uid://5ln7jt4egdrl" path="res://assets/maps/Tilled_Dirt.png" id="4_3i02u"]
+[ext_resource type="PackedScene" uid="uid://ooe6p4dhnl75" path="res://scenes/ladang.tscn" id="5_0et5p"]
+[ext_resource type="PackedScene" uid="uid://b4p1l5p6d11ml" path="res://scenes/toolFarm.tscn" id="6_tefeu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qsoy"]
+
+[node name="main" type="Node2D"]
+
+[node name="FreeChickenHouse" type="Sprite2D" parent="."]
+position = Vector2(343, 217)
+texture = ExtResource("2_lckvv")
+
+[node name="player" parent="." instance=ExtResource("1_ch7n4")]
+z_index = 10
+position = Vector2(287, 265)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(7, -7)
+zoom = Vector2(4, 4)
+
+[node name="map" parent="." instance=ExtResource("2_66aix")]
+position = Vector2(-1, -27)
+
+[node name="ladang" type="Sprite2D" parent="."]
+position = Vector2(356, 274)
+texture = ExtResource("4_3i02u")
+region_enabled = true
+region_rect = Rect2(9.20804, 8.90127, 29.6868, 29.6868)
+
+[node name="Area2D" type="Area2D" parent="ladang"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ladang/Area2D"]
+shape = SubResource("RectangleShape2D_0qsoy")
+
+[node name="ladang" parent="ladang" instance=ExtResource("5_0et5p")]
+texture_filter = 1
+position = Vector2(-41, 30)
+
+[node name="ladang2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(356, 306)
+texture = ExtResource("4_3i02u")
+region_enabled = true
+region_rect = Rect2(9.20804, 8.90127, 29.6868, 29.6868)
+
+[node name="tool" parent="." instance=ExtResource("6_tefeu")]
+offset_left = 259.0
+offset_top = 303.0
+offset_right = 335.0
+offset_bottom = 339.0

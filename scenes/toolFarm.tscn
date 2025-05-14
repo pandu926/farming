@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://b4p1l5p6d11ml"]
+
+[ext_resource type="Theme" uid="uid://ba1c7aq7u7wav" path="res://theme/tool_theme.tres" id="1_pbkqq"]
+[ext_resource type="Texture2D" uid="uid://cfecy1x2or2nt" path="res://assets/objects/Basic_tools_and_meterials.png" id="2_bo3y6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxkjb"]
+atlas = ExtResource("2_bo3y6")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0rnmy"]
+load_path = "res://.godot/imported/Basic_tools_and_meterials.png-b8fdfcd02418d3aed1fdd871f113c8d8.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5e8ak"]
+atlas = SubResource("CompressedTexture2D_0rnmy")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6iuvl"]
+load_path = "res://.godot/imported/Basic_tools_and_meterials.png-b8fdfcd02418d3aed1fdd871f113c8d8.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhvjn"]
+atlas = SubResource("CompressedTexture2D_6iuvl")
+region = Rect2(32, 0, 16, 16)
+
+[node name="tool" type="PanelContainer"]
+offset_right = 80.0
+offset_bottom = 30.0
+theme = ExtResource("1_pbkqq")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_type_variation = &"darkWood"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="cangkir" type="Button" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"toolFarm"
+icon = SubResource("AtlasTexture_sxkjb")
+
+[node name="bendo" type="Button" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"toolFarm"
+icon = SubResource("AtlasTexture_5e8ak")
+
+[node name="pacul" type="Button" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"toolFarm"
+icon = SubResource("AtlasTexture_yhvjn")

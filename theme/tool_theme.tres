@@ -1,0 +1,27 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://ba1c7aq7u7wav"]
+
+[ext_resource type="Texture2D" uid="uid://5ln7jt4egdrl" path="res://assets/maps/Tilled_Dirt.png" id="1_ttw4v"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_to17s"]
+load_path = "res://.godot/imported/Basic_tools_and_meterials.png-b8fdfcd02418d3aed1fdd871f113c8d8.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ttw4v"]
+atlas = SubResource("CompressedTexture2D_to17s")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4r0q"]
+atlas = ExtResource("1_ttw4v")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rg4yk"]
+texture = SubResource("AtlasTexture_u4r0q")
+
+[resource]
+darkWood/base_type = &"MarginContainer"
+darkWood/constants/margin_bottom = 10
+darkWood/constants/margin_left = 10
+darkWood/constants/margin_right = 10
+darkWood/constants/margin_top = 10
+toolFarm/base_type = &"Button"
+toolFarm/icons/icon = SubResource("AtlasTexture_ttw4v")
+toolFarm/styles/normal = SubResource("StyleBoxTexture_rg4yk")
